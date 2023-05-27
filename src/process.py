@@ -101,6 +101,9 @@ for file_path in test_files:
     test_images.extend(glob.glob(fr"{file_path}/*.jpg"))
     test_labels.extend(glob.glob(fr"{file_path}/*.json"))
 
+#删除delete.txt
+path_delete=os.path.join(path,'delete.txt')
+os.remove(path_delete)
 
 path_train_image=os.path.join(path_txt,'train_image.txt')
 path_val_image=os.path.join(path_txt,'val_image.txt')
