@@ -44,8 +44,8 @@ def convert_json(json_file):
                 res.append([])
         json_data['res']=res
     
-    with open(os.path.join(result_p,json_file),'w',encoding='utf8')as f:
-        json.dump(json_data,f)
+    with open(os.path.join(result_p,f'{video_index}.txt'),'w',encoding='utf8')as f:
+        f.write(json.dumps(json_data))
                     
 
 
