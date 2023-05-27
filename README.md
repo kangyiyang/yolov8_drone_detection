@@ -7,7 +7,7 @@
 #### 运行步骤
 1. 环境部署  
 git clone https://github.com/kangyiyang/yolov8_drone_detection.git  
-pip install requirements.txt
+pip install -r requirements.txt
 2. 下载解压数据集到orignal_data文件夹下  
 cd orignal_data  
 7z x 无人机检测与追踪.7z
