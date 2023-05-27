@@ -7,8 +7,7 @@
 #### 运行步骤
 1. 环境部署  
 git clone https://github.com/kangyiyang/yolov8_drone_detection.git  
-2. 下载解压数据集到orignal_data文件夹下  
-cd orignal_data  
+2. 下载数据集到datasets文件夹下，使用如下命令解压数据集，然后将无人机检测与追踪文件夹重命名为orignal_data  
 7z x 无人机检测与追踪.7z
 3. 执行数据预处理  
 cd src  
