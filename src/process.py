@@ -148,7 +148,6 @@ path_images_test=os.path.join(path_images,'test')
 path_labels_train=os.path.join(path_labels,'train')
 path_labels_val=os.path.join(path_labels,'val')
 path_labels_test=os.path.join(path_labels,'test')
-result_p=os.path.join(os.path.dirname(os.path.dirname(__file__)),'result')
 
 makedir(path_images)
 makedir(path_labels)
@@ -158,7 +157,6 @@ makedir(path_images_test)
 makedir(path_labels_train)
 makedir(path_labels_val)
 makedir(path_labels_test)
-makedir(result_p)
 
 copy_image(path_train_image,path_images_train)
 copy_image(path_val_image,path_images_val)
@@ -169,7 +167,6 @@ convert_label(path_train_image,path_labels_train)
 convert_label(path_val_image,path_labels_val)
 
 copy_json(path_label,path_labels_test)
-copy_json(path_label,result_p)
 
 #生成yaml文件
 
