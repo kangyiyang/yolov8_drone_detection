@@ -8,6 +8,9 @@ result_path=os.path.join(os.path.dirname(os.path.dirname(__file__)),'datasets/da
 path_image=os.path.join(os.path.dirname(os.path.dirname(__file__)),'datasets/data/images/test')
 result_p=os.path.join(os.path.dirname(os.path.dirname(__file__)),'result')
 
+def makedir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 def convert(x,y,w,h,size):
     x,y,w,h=eval(x),eval(y),eval(w),eval(h)
@@ -49,6 +52,8 @@ def convert_json(json_file):
                     
 
 
+makedir(result_p)
+            
 json_files=[]
 for json_file in os.listdir(result_path):
     json_files.append(json_file)
