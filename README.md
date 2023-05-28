@@ -14,5 +14,5 @@ git clone https://github.com/kangyiyang/yolov8_drone_detection.git
 单卡：yolo task=detect mode=train model=yolov8n.pt data=datasets/config.yaml batch=32 epochs=20 imgsz=640 workers=16 device=0  
 多卡：yolo task=detect mode=train model=yolov8n.pt data=datasets/config.yaml batch=32 epochs=20 imgsz=640 workers=16 device=\'0,1\'
 5. 使用yolo命令预测数据  
-yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=datasets/data/images/test device=0
+yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=datasets/data/images/test device=0 save_txt=True
 6. 执行数据后处理，打开src下的postcess.py文件，点击运行
